@@ -37,7 +37,7 @@ const Navigation = ({ mobileNav }: navProp) => {
         </ul>
         <div className="header__sect">
           <span>
-            <NavLink to='#'>Sign in</NavLink>
+            <NavLink to='/sign-in'>Sign In</NavLink>
           </span>
           <span>
             <Button className="header__btn">

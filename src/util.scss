@@ -57,3 +57,36 @@
   padding: 15px 35px;
   color: #fff;
 }
+
+/* text-input*/
+.text-input {
+  border: 1px solid inherit;
+  padding: 12px 15px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  // margin: 15px auto;
+  background: inherit;
+  input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: inherit;
+  }
+  .icon {
+    margin: auto 3px;
+    font-size: 20px;
+    color: inherit;
+  }
+  .input__btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: inherit;
+  }
+}
+
+.layout {
+  margin-top: 4.5rem;
+}

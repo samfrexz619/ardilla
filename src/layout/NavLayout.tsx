@@ -13,7 +13,7 @@ const NavLayout = () => {
   return ( 
     <main>
       <Navigation mobileNav={handleMobileNav} />
-      <section>
+      <section className="layout">
         <Outlet  />
       </section>
       {openNav && <Mobile mobileNav={handleMobileNav}/>}

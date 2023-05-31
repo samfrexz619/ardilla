@@ -29,6 +29,9 @@ button {
   background: $pry;
   color: #fff;
   width: 100%;
+  position: fixed;
+  top: 0;
+  // margin-bottom: 10rem;
   .header__nav {
     height: 10vh;
     width: 93%;
@@ -150,5 +153,52 @@ button {
       }
 
     }
+  }
+}
+
+/* form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  form {
+    width: 350px;
+    text-align: center;
+    border: 1px solid #FFFDF2;
+    padding: 20px;
+    border-radius: 10px;
+    @media(min-width: 1024px){
+      width: 450px;
+    }
+    .form__btn {
+      background: $sec;
+      color: #fff;
+      padding: 13px 30px;
+      border-radius: 30px;
+      text-transform: capitalize;
+    }
+    .form__field {
+      margin-bottom: 20px;
+      .input {
+        background: #fff;
+        border: 1px solid #DBDBDB;
+        // margin: 10px auto;
+      }
+    }
+    p {
+      color: #fff;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+  }
+  background: $pry;
+  height: 100vh;
+  .form__err {
+    color: red;
+    background: #fff;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 5px;
   }
 }

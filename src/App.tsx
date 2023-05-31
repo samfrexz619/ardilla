@@ -4,6 +4,7 @@ import NavLayout from './layout/NavLayout'
 import Demo from './pages/Demo'
 import './util.scss'
 import { Business, Learn } from './pages/AllPages'
+import Signin from './pages/Signin'
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: '/learn',
         element: <Learn  />
+      },
+      {
+        path: '/sign-in',
+        element: <Signin />
       },
       {
         path: '/demo',
