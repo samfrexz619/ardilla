@@ -1,0 +1,154 @@
+$pry: #240053;
+$sec: #8807F7;
+
+/*remove default */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* desktop top nav style*/
+.header {
+  background: $pry;
+  color: #fff;
+  width: 100%;
+  .header__nav {
+    height: 10vh;
+    width: 93%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media(min-width: 768px){
+      width: 85%;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        &:first-child {
+          margin-right: 5rem;
+        }
+         a {
+          color: #fff;
+          text-transform: capitalize;
+          font-size: 16px;
+          &:not(:first-child){
+            padding: 0 22px;
+          }
+         
+          &.active {
+            color: $sec;
+          }
+        }
+      }
+    }
+    .header__link {
+      display: none;
+      @media(min-width: 1024px){
+        display: flex;
+      }
+    }
+  }
+
+  .header__btn {
+    background: $sec;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 30px;
+    text-transform: capitalize;
+  }
+  .header__sect {
+    display: none;
+    @media(min-width: 1024px){
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .image {
+        width: 50px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .header__icon {
+    display: flex;
+    font-size: 26px;
+    cursor: pointer;
+    @media(min-width: 1024px){
+      display: none;
+    }
+  }
+}
+
+.status {
+  border: 1px solid #fff;
+  padding: 1px 3px;
+  border-radius: 5px;
+}
+
+/* mobile styles */
+.mobile {
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  .close {
+    color: #fff;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 280px;
+    top: 20px;
+    cursor: pointer;
+  }
+  
+  @media(min-width: 1024px){
+    display: none;
+  }
+  .mobile__nav {
+    position: relative;
+    left: 0;
+    height: 100vh;
+    background: $pry;
+    color: #fff;
+    width: 256px;
+    padding-left: 40px;
+    .mobile__link {
+      li {
+        display: flex;
+        flex-direction: column;
+        a {
+          img {
+            padding: 2rem 0;
+            width: 120px;
+          }
+          padding: 15px 0;
+          text-transform: capitalize;
+          font-size: 18px;
+          &.active {
+            color: $sec;
+          }
+        }
+      }
+
+    }
+  }
+}
